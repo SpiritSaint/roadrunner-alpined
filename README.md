@@ -16,6 +16,19 @@ In the following table are included some specific details of this Docker image.
 |PHP Version|This image uses the latest PHP 7.3 available from [Codecasts/PHP-Alpine](https://github.com/codecasts/php-alpine) repository.|
 |Alpine Version|This image uses the 3.9 version.|
 
+Currently this image includes some PHP libraries likes:
+
+- mbstring
+- json
+- curl
+- zip
+- zlib
+- phar
+- openssl
+- iconv
+
+Also include prestissimo for fast composer packages download.
+
 ## Disclaimer
 
 This repository is in WIP. 
