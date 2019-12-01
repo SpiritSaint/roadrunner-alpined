@@ -27,6 +27,7 @@ RUN apk add --update php-iconv@php
 RUN apk add --update php-zlib@php
 RUN apk add --update php-phar@php
 RUN apk add --update php-openssl@php
+RUN apk add --update php-session@php
 
 # install php composer package manager.
 RUN apk add --update composer
@@ -51,6 +52,8 @@ COPY worker.php worker.php
 
 # copy roadrunner yaml file.
 COPY .rr.yaml .rr.yaml
+
+COPY app app
 
 # run server
 CMD ["./rr", "serve", "-v", "-d"]
